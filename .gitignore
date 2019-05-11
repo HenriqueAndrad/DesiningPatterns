@@ -8,3 +8,7 @@ obj/
 Assembly-CSharp\.csproj
 
 Item Spawner\.sln
+
+\.vs/
+
+DesiningPatterns\.sln

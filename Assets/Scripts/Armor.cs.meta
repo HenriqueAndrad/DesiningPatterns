@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 604b67d1042c02e4fa9683c1ae8c035a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ArmorPrefab: {fileID: 2252054613268300685, guid: b462c560b1972454f8895508e194c0da,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

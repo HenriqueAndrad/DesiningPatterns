@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Command;
-public class SetType : MonoBehaviour, ICommand
+
+public class DestroyCommand : MonoBehaviour, ICommand
 {
     [SerializeField] private string m_ID;
     [SerializeField] private string m_Type;
@@ -12,16 +13,16 @@ public class SetType : MonoBehaviour, ICommand
     {
         m_ID = invoker.ID;
         m_Type = invoker.Type;
-        SetItemType();
+        DestroyItem();
     }
 
-    public void SetItemType()
+    public void DestroyItem()
     {
         m_Object = GameObject.Find(m_ID);
 
         if (m_Object != null)
         {
-            m_Object.GetComponent<Item>().Type = m_Type;
+            Destroy(m_Object);
         }
     }
 }
