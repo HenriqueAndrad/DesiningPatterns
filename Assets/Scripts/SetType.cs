@@ -6,6 +6,10 @@ public class SetType : MonoBehaviour, ICommand
 {
     [SerializeField] private string m_ID;
     [SerializeField] private string m_Type;
+    public string Type {
+        get { return m_Type; }
+        set { m_Type = value; }
+    }
     [SerializeField] private GameObject m_Object;
 
     public void Execute(Invoker invoker)

@@ -1,7 +1,9 @@
-﻿namespace Factory
+﻿using UnityEngine;
+
+namespace Factory
 {
     public interface IProduct
     {
-        void SetFirstSprite();
+        GameObject Operation();
     }
 }

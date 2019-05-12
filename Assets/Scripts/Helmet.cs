@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Armor : Item
+public class Helmet : Item
 {
 
 }

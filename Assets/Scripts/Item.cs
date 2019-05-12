@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Command;
+using Factory;
 
 public class Item : MonoBehaviour
 {
@@ -33,15 +34,21 @@ public class Item : MonoBehaviour
         set { m_Image = value; }
     }
     [SerializeField] private Text m_Text;
+    public Text Text
+    {
+        get { return m_Text; }
+        set { m_Text = value; }
+    }
 
     private void Awake()
     {
         m_Type = "gen";
-        m_ID = gameObject.name;
+        this.transform.SetParent(GameObject.Find("Canvas").transform);
     }
 
     private void Start()
     {
+        m_ID = "ID: " + gameObject.name;
         m_Text.text = m_ID;
     }
 
